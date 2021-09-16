@@ -1,5 +1,5 @@
 """This file is to run the model inference here's the command 
-python infrence.py -i trainval/images/image_000000001.jpg -m model/model.pt"""
+python run_inference.py -i trainval/images/image_000000001.jpg -m model/model.pt"""
 
 # import the necessary packages
 import argparse
@@ -29,7 +29,6 @@ confidence = args["confidence"]
 
 # classes which our model will detect and the color object of the bounding box it will create
 CLASSES=["Background","Person","Car"]
-COLORS = np.random.uniform(0, 255, size=(len(CLASSES), 3))
 
 # reading the image with pillow and converion into the numpy arrays
 img = Image.open(input_image)
@@ -82,6 +81,5 @@ for i in range(0, len(_bboxes)):
 
 
 # show the output image
-cv2.imshow("Output", open_cv_image) 
-cv2.imwrite("image_output.jpg", open_cv_image)
+cv2.imshow("output", open_cv_image) 
 cv2.waitKey(0)
