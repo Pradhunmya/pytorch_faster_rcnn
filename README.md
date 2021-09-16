@@ -1,6 +1,13 @@
 # PyTorch implementation of Faster R-CNN over COCO dataset
 
-##  1. Introduction  
+### Table of Contents
+* [Introduction](#introduction)
+* [Installation](#installation)
+* [Run Inference](#run-inference)
+* [Train Model](#train-model)
+* [Inference Result](#inference-result)
+
+## Introduction  
 Pytorch based implementation of faster rcnn framework for detecting the Person and car which is trained on the coco dataset.For details about faster R-CNN please refer to the paper [Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks](https://arxiv.org/abs/1506.01497) by Shaoqing Ren, Kaiming He, Ross Girshick, Jian Sun.
 
 This detection framework has the following features:  
@@ -9,7 +16,7 @@ This detection framework has the following features:
 * It can be a really detection framework. You only need to change super parameters in config file and get different models to compare different model.
 
 
-##  2. Installation
+## Installation
 * Python 3.6 or 3.7  
 * Pytorch 1.7  
 * torchvision 0.10 
@@ -24,7 +31,7 @@ pip install -r requirements.txt
   ```
 
 
-##  3. Run Inference
+## Run Inference
 
 Follow the below steps to run the inference:
 
@@ -60,7 +67,7 @@ python run_inference.py -i <Image PATH> -m model/model.pt
   ```
 After that you will get the output display which is detecting the car and person.
 
-##  4. Train Model
+## Train Model
 
 Follow all the steps from 1 to 3 above #3 Run Inference section
 
@@ -91,7 +98,7 @@ Please update the config.py as per the dataset path, train_data_dir and train_co
 python train.py
   ```
 
-## 5. Inference Result
+## Inference Result
 
 ![image_output4](https://user-images.githubusercontent.com/30790932/133673890-98418b94-c4e3-401c-b279-5cf65776c01c.jpg)
 
