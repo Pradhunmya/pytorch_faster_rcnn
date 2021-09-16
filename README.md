@@ -6,6 +6,7 @@
 * [Run Inference](#run-inference)
 * [Train Model](#train-model)
 * [Inference Result](#inference-result)
+* [Conclusion](#conclusion)
 
 ## Introduction  
 Pytorch based implementation of faster rcnn framework for detecting the Person and car which is trained on the coco dataset.For details about faster R-CNN please refer to the paper [Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks](https://arxiv.org/abs/1506.01497) by Shaoqing Ren, Kaiming He, Ross Girshick, Jian Sun.
@@ -41,6 +42,8 @@ Follow the below steps to run the inference:
 git clone https://github.com/Pradhunmya/pytorch_faster_rcnn
   ```
 2. Create a virtual environment (optional)  
+
+Prerequisite are Python3 and pip already been installed
 
 ```Shell
 pip install virtualenv
@@ -99,16 +102,26 @@ python train.py
   ```
 
 ## Inference Result
-
-![image_output4](https://user-images.githubusercontent.com/30790932/133673890-98418b94-c4e3-401c-b279-5cf65776c01c.jpg)
-
+Red color for the person detection and Green for the car detection here some of the result generated from this model bellow:
 
 
+![image_output5](https://user-images.githubusercontent.com/30790932/133676099-c8be67e5-b694-4107-80e8-e9c450d8c63e.jpg)
 
 
+![image_output3](https://user-images.githubusercontent.com/30790932/133676298-a2ab76e5-f403-466a-bed7-c287c2c23960.jpg)
 
 
+![image_output1](https://user-images.githubusercontent.com/30790932/133676525-4741c84a-d149-41d7-8cb9-8a0df4680f1f.jpg)
 
 
+![image_output4](https://user-images.githubusercontent.com/30790932/133676534-63e0bad0-782a-4b7d-9434-1a1b9decb98a.jpg)
+
+
+![image_output](https://user-images.githubusercontent.com/30790932/133676539-2d4cc7d9-48f1-49f1-8f1f-d54daaaebd6b.jpg)
+
+
+## Conclusion
+
+For this particular approach with faster RCNN we are getting a good result but the model I have added in the repo is just trained with the 100 epochs so for the better result or more accurate result we can fine tune the model with more dataset or also we could update the backbone of the model, training with more epochs and with other hyperparameters as well.
 
  
